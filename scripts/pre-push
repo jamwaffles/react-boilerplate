@@ -1,0 +1,14 @@
+#!/bin/bash
+set -e
+
+cd ./frontend
+
+echo "Running lint..."
+npm run lint
+npm run lint-less
+echo "Lint complete"
+echo
+echo "Running tests..."
+npm run unit
+
+echo "✔︎ Tests complete"

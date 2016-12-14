@@ -1,0 +1,142 @@
+rules:
+  comma-dangle:
+    - 2
+    - always-multiline
+  quotes:
+    - 0
+    - double
+  linebreak-style:
+    - 2
+    - unix
+  semi:
+    - 2
+    - never
+  space-infix-ops:
+    - 2
+    - int32Hint: false
+  camelcase:
+    - 2
+    - properties: never
+  comma-spacing:
+    - 2
+    - before: false
+      after: true
+  array-bracket-spacing:
+    - 2
+    - always
+    - objectsInArrays: false
+      arraysInArrays: true
+  curly: error
+  block-spacing:
+    - 2
+    - always
+  no-whitespace-before-property: error
+  keyword-spacing:
+    - error
+    -
+      before: true
+      after: true
+      overrides:
+        if:
+          after: false
+        for:
+          after: false
+        while:
+          after: false
+        catch:
+          after: false
+        switch:
+          after: false
+  no-spaced-func: error
+  spaced-comment:
+    - error
+    - always
+  no-irregular-whitespace: error
+  no-multi-spaces:
+    - error
+    -
+      exceptions:
+        Property: true
+  space-in-parens:
+    - error
+    - never
+  space-before-function-paren:
+    - error
+    - never
+  generator-star-spacing:
+    - error
+    -
+      before: true
+      after: false
+  indent:
+    - 2
+    - tab
+    - SwitchCase: 1
+  no-console: 0
+  no-var: 2
+  prefer-spread: 2
+  no-case-declarations: 0
+  require-yield: 0
+  no-this-before-super: 2
+  space-unary-ops:
+    - 2
+    -
+      words: true
+      nonwords: false
+  eqeqeq: 2
+  dot-location:
+    - 2
+    - property
+  no-useless-constructor: 2
+  react/prefer-stateless-function: 1
+  react/prefer-es6-class: 2
+  react/jsx-uses-react: 2
+  react/jsx-curly-spacing:
+    - 2
+    - never
+  react/react-in-jsx-scope: 2
+  react/prop-types: 2
+  react/jsx-pascal-case: 2
+  react/jsx-no-duplicate-props: 2
+  react/jsx-wrap-multilines: 1
+  react/jsx-key: 2
+  react/jsx-closing-bracket-location: 2
+  react/no-direct-mutation-state: 2
+  react/jsx-no-undef: 2
+  react/self-closing-comp: 2
+  react/no-multi-comp: 2
+  react/no-is-mounted: 2
+  react/no-did-update-set-state: 1
+  react/no-deprecated: 1
+  react/require-render-return: 2
+  react/forbid-prop-types: 1
+  react/jsx-indent-props:
+    - 2
+    - tab
+  react/jsx-uses-vars: 1
+  react/jsx-space-before-closing:
+    - 2
+    - always
+env:
+  es6: true
+  node: true
+  browser: true
+globals:
+  ga: false
+  describe: false
+  it: false
+  casper: false
+  beforeEach: false
+  afterEach: false
+  dataLayer: false
+parserOptions:
+  ecmaFeatures:
+    experimentalObjectRestSpread: true
+    jsx: true
+    classes: true
+  ecmaVersion: 2017
+  sourceType: module
+extends: 'eslint:recommended'
+plugins:
+  - react
+parser: babel-eslint

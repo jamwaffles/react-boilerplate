@@ -1,0 +1,21 @@
+{
+    "fileExtensions": [".less", ".css"],
+
+    "spaceAfterPropertyColon": {
+        "enabled": true,
+        "style": "one_space"
+    },
+
+    "propertyOrdering": false,
+    "zeroUnit": false,
+    "singleLinePerSelector": false,
+    "hexLength": false,
+    "decimalZero": false,
+    "stringQuotes": false,
+    "qualifyingElement": false,
+    "importantRule": false,
+    "borderZero": false,
+    "finalNewline": false,
+    "maxCharPerLine": false,
+    "newlineAfterBlock": false
+}

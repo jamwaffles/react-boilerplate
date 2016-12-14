@@ -1,0 +1,11 @@
+.git/**/*
+node_modules/**/*
+public/**/*
+*.png
+test/**/*
+less/**/*
+coverage/**/*
+less/**/*
+npm-debug.log
+junit/**/*
+wraith/**/*

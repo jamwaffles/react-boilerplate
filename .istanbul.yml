@@ -1,0 +1,13 @@
+instrumentation:
+  root: app
+  extensions: [ '.js', '.jsx' ]
+  excludes: [
+    'browser.jsx',
+    'index.jsx',
+    'routes.jsx',
+    'pages/**/*',
+    '**/*.ios.js'
+  ]
+reporting:
+  reports:
+    - html

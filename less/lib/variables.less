@@ -1,0 +1,72 @@
+@text: #4a4a4a;
+@text-med: #51606e;
+@text-light: fadeout(@text, 50%);
+@text-inverse: #fff;
+@text-brand: #1e8d74;
+@text-brand-darker: #2a2a2a;
+
+// colours
+@background-dark: #e1e1e1;
+@background-light: #f8f8f8;
+@background-blue-light: #e4efff;
+@background-brand-dark: #4d5962;
+@background-brand-light: #f5f9ff;
+@border: #b8b8b8;
+@border-light: fade(@border, 15%);
+@tm-primary: #4487cb;
+@tm-secondary: #f78105;
+@brand-primary: @tm-primary;
+@brand-secondary: #50e3c2;
+@brand-secondary-dark: #1e8d74;
+
+@theme-personal: #77cd2b;
+@theme-employment: #3d7dca;
+@theme-employment-light: #00a2ff;
+@theme-income: #f5a623;
+@theme-address: #bf68d1;
+@theme-apr: #5f9c0e;
+@theme-apr-light: #8cc63f;
+@theme-purchase: #86259a;
+@theme-purchase-light: @theme-address;
+
+@theme-error: #f74f05;
+@theme-warning: #f7cc05;
+@theme-info: @tm-primary;
+@theme-success: @theme-personal;
+
+@link-color: @tm-primary;
+@link-hover-color: @tm-secondary;
+@link-active-color: @tm-secondary;
+
+@screen-large: 1023px; // need to fix the 'sweet spot' - Mike
+@screen-med: 767px;
+@screen-small: 480px;
+
+@big-screen: 1024px;
+@medium-screen: 480px;
+
+@screen-M: ~"only screen and (min-width: "(@medium-screen + 1) ~") and (max-width: "(@big-screen - 1) ~")";
+@screen-M-plus: ~"only screen and (min-width: "(@medium-screen + 1) ~")";
+@screen-L-plus: ~"only screen and (min-width: @{big-screen})";
+@screen-L-less: ~"only screen and (max-width: "(@big-screen - 1) ~")";
+
+@spacing-tiny: 5px;
+@spacing-small: 10px;
+@spacing: 20px;
+@spacing-large: 40px;
+@spacing-huge: 80px;
+
+@easing-standard: cubic-bezier(0.4, 0.0, 0.2, 1);
+@easing-decel: cubic-bezier(0.0, 0.0, 0.2, 1);
+@easing-leave: cubic-bezier(0.4, 0.0, 0.6, 1);
+
+@easing-duration-short: 195ms;
+@easing-duration-med: 225ms;
+@easing-duration-long: 375ms;
+
+
+// Font stacking
+
+@fallback-stack: 'Helvetica Neue', 'Segoe UI', 'Lucida Sans', 'Arial', 'Verdana', sans-serif;
+@open-sans: 'Open Sans', @fallback-stack;
+@montserrat: 'Montserrat', @fallback-stack;

@@ -1,0 +1,14 @@
+{
+	"ignore": [
+		".git/*",
+		"node_modules/*",
+		"public/*",
+		"*.png",
+		"test/*",
+		"less/*",
+		"coverage/*",
+		"junit/*",
+		"less/*",
+		"npm-debug.log"
+	]
+}
